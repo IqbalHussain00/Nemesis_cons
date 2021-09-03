@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action='login' method='post'>
+        {% csrf_token %}
+        <h1>login form</h1>
+        <input type='email' name='email' placeholder='Email'><br>
+        <input type='password' name='password' placeholder='password'><br>
+        <button type='submit'>Login</button>
+    </form>
+    <h4>for signup press the below link</h4>
+    <li><a href="signup">signup</a></li>
+
+
+</body>
+</html>
